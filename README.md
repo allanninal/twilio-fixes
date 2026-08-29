@@ -21,6 +21,7 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [30022 when sends outrun the throughput the carrier assigned](./a2p-throughput-exceeded-30022/) — https://www.allanninal.dev/twilio/a2p-throughput-exceeded-30022/
 - [the account itself is suspended, so every send fails with 20005](./account-suspended-or-closed/) — https://www.allanninal.dev/twilio/account-suspended-or-closed/
 - [an alphanumeric sender ID is unregistered where you send](./alphanumeric-sender-id-unregistered/) — https://www.allanninal.dev/twilio/alphanumeric-sender-id-unregistered/
+- [answering machine detection is routing humans to voicemail](./amd-machine-answer-misrouting/) — https://www.allanninal.dev/twilio/amd-machine-answer-misrouting/
 - [no API keys exist, so the auth token is the credential](./auth-token-used-instead-of-api-key/) — https://www.allanninal.dev/twilio/auth-token-used-instead-of-api-key/
 - [the balance is one busy hour from a 20005 suspension](./balance-below-safety-floor/) — https://www.allanninal.dev/twilio/balance-below-safety-floor/
 - [error 21617: the rendered message body exceeds 1600 chars](./body-exceeds-1600-chars-21617/) — https://www.allanninal.dev/twilio/body-exceeds-1600-chars-21617/
@@ -32,15 +33,19 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a conversation webhook with no URL fails every event: 50369](./conversations-webhook-url-missing/) — https://www.allanninal.dev/twilio/conversations-webhook-url-missing/
 - [recycled numbers send OTPs to whoever owns them now](./deactivated-number-recycling/) — https://www.allanninal.dev/twilio/deactivated-number-recycling/
 - [Dial rejected with 13214 on a passed-through caller ID](./dial-invalid-caller-id-13214/) — https://www.allanninal.dev/twilio/dial-invalid-caller-id-13214/
+- [13224: Twilio refuses the number your Dial verb asked for](./dial-number-unsupported-or-invalid-13224/) — https://www.allanninal.dev/twilio/dial-number-unsupported-or-invalid-13224/
 - [US and Canadian numbers with no registered E911 address](./emergency-address-unregistered/) — https://www.allanninal.dev/twilio/emergency-address-unregistered/
 - [Notify services still on the account after Notify's EOL](./eol-notify-service-in-use/) — https://www.allanninal.dev/twilio/eol-notify-service-in-use/
 - [Programmable Chat is still in use past its end of life](./eol-programmable-chat-in-use/) — https://www.allanninal.dev/twilio/eol-programmable-chat-in-use/
 - [a failed Event Streams sink drops events and nothing says so](./event-streams-sink-failed/) — https://www.allanninal.dev/twilio/event-streams-sink-failed/
 - [Fraud Guard blocked the prefix, so real users get 60410](./fraud-guard-blocking-prefix/) — https://www.allanninal.dev/twilio/fraud-guard-blocking-prefix/
 - [a voice-only From number fails every SMS with error 21606](./from-number-not-sms-capable/) — https://www.allanninal.dev/twilio/from-number-not-sms-capable/
+- [high risk dialing prefixes left open to toll fraud](./high-risk-dialing-permissions-open/) — https://www.allanninal.dev/twilio/high-risk-dialing-permissions-open/
 - [phone numbers with no traffic still bill every month](./idle-phone-numbers-billed/) — https://www.allanninal.dev/twilio/idle-phone-numbers-billed/
 - [inbound SMS disappears into a number with no sms_url](./inbound-webhook-black-hole/) — https://www.allanninal.dev/twilio/inbound-webhook-black-hole/
 - [SMS to a landline fails with 30006 and retrying never helps](./landline-destination-30006/) — https://www.allanninal.dev/twilio/landline-destination-30006/
+- [a link shortening certificate expires and short links break](./link-shortening-cert-expiring/) — https://www.allanninal.dev/twilio/link-shortening-cert-expiring/
+- [an invalid or uncovered number: 21211 on send, 60600 on Lookup](./lookup-invalid-or-uncovered-number/) — https://www.allanninal.dev/twilio/lookup-invalid-or-uncovered-number/
 - [messages stay queued or accepted and never reach a final state](./messages-stuck-queued-or-accepted/) — https://www.allanninal.dev/twilio/messages-stuck-queued-or-accepted/
 - [queue overflow 30001: a send loop outruns one long code](./messaging-queue-overflow-30001/) — https://www.allanninal.dev/twilio/messaging-queue-overflow-30001/
 - [an empty sender pool fails every send with error 21704](./messaging-service-empty-sender-pool/) — https://www.allanninal.dev/twilio/messaging-service-empty-sender-pool/
@@ -63,6 +68,7 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a phone number still points at Twilio's demo TwiML](./phone-number-still-on-demo-twiml/) — https://www.allanninal.dev/twilio/phone-number-still-on-demo-twiml/
 - [numbers still pinned to the 2008-08-01 API version](./pinned-old-api-version/) — https://www.allanninal.dev/twilio/pinned-old-api-version/
 - [20003 on a read key: dead credential or a real boundary](./read-credential-permission-denied/) — https://www.allanninal.dev/twilio/read-credential-permission-denied/
+- [a recording row says absent and there is no media behind it](./recording-absent-with-error-code/) — https://www.allanninal.dev/twilio/recording-absent-with-error-code/
 - [call recordings stored without encryption at rest](./recordings-not-encrypted/) — https://www.allanninal.dev/twilio/recordings-not-encrypted/
 - [an approved regulatory bundle is counting down to expiry](./regulatory-bundle-expiring/) — https://www.allanninal.dev/twilio/regulatory-bundle-expiring/
 - [a rejected regulatory bundle blocks every number purchase](./regulatory-bundle-rejected/) — https://www.allanninal.dev/twilio/regulatory-bundle-rejected/
@@ -75,6 +81,8 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [SMS Geo Permissions are off for the destination country](./sms-geo-permissions-disabled/) — https://www.allanninal.dev/twilio/sms-geo-permissions-disabled/
 - [SMS Pumping Protection blocks legitimate OTPs with 30450](./sms-pumping-protection-30450/) — https://www.allanninal.dev/twilio/sms-pumping-protection-30450/
 - [error 14107: an auto-reply loop trips the SMS rate limit](./sms-reply-loop-rate-limit-14107/) — https://www.allanninal.dev/twilio/sms-reply-loop-rate-limit-14107/
+- [extra numbers on a Sole Prop campaign never leave UNREGISTERED](./sole-prop-extra-numbers-unregistered/) — https://www.allanninal.dev/twilio/sole-prop-extra-numbers-unregistered/
+- [a Sole Proprietor brand blocked by an OTP nobody answered](./sole-prop-otp-never-accepted/) — https://www.allanninal.dev/twilio/sole-prop-otp-never-accepted/
 - [years-old API keys are still live with nobody owning them](./stale-or-orphaned-api-keys/) — https://www.allanninal.dev/twilio/stale-or-orphaned-api-keys/
 - [status callback failures with 11200 leave delivery state blind](./status-callback-webhook-failing-11200/) — https://www.allanninal.dev/twilio/status-callback-webhook-failing-11200/
 - [a Studio Flow left in draft, so your edits are live nowhere](./studio-flow-draft-not-published/) — https://www.allanninal.dev/twilio/studio-flow-draft-not-published/
@@ -82,6 +90,8 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a published Studio Flow that no phone number points at](./studio-flow-not-wired-to-number/) — https://www.allanninal.dev/twilio/studio-flow-not-wired-to-number/
 - [a suspended subaccount, so one tenant's traffic 20005s](./subaccount-suspended-silently/) — https://www.allanninal.dev/twilio/subaccount-suspended-silently/
 - [a Sync webhook rejected as invalid, or never called at all](./sync-webhook-url-invalid/) — https://www.allanninal.dev/twilio/sync-webhook-url-invalid/
+- [T-Mobile caps daily segments per brand, not per campaign](./tmobile-brand-daily-segment-cap/) — https://www.allanninal.dev/twilio/tmobile-brand-daily-segment-cap/
+- [a rejected toll-free record's edit window closes on a clock](./tollfree-edit-window-expiring/) — https://www.allanninal.dev/twilio/tollfree-edit-window-expiring/
 - [an unverified toll-free number is blocked, not throttled](./tollfree-number-not-verified/) — https://www.allanninal.dev/twilio/tollfree-number-not-verified/
 - [a rejected toll-free verification is fixable or it is not](./tollfree-verification-rejected/) — https://www.allanninal.dev/twilio/tollfree-verification-rejected/
 - [a trial account rejects multi-segment messages with 30044](./trial-account-segment-limit-30044/) — https://www.allanninal.dev/twilio/trial-account-segment-limit-30044/
@@ -92,6 +102,7 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [one rejected Trust Hub profile fails brands and toll-free](./trusthub-customer-profile-rejected/) — https://www.allanninal.dev/twilio/trusthub-customer-profile-rejected/
 - [TwiML that is not well-formed XML fails with 12100](./twiml-document-parse-failure-12100/) — https://www.allanninal.dev/twilio/twiml-document-parse-failure-12100/
 - [a TwiML response over 64 kB drops the call with 11750](./twiml-response-body-too-large-11750/) — https://www.allanninal.dev/twilio/twiml-response-body-too-large-11750/
+- [12200: TwiML that parses, fails the schema, and is skipped](./twiml-schema-validation-warning-12200/) — https://www.allanninal.dev/twilio/twiml-schema-validation-warning-12200/
 - [one smart quote triples your segment count and your bill](./ucs2-segment-inflation/) — https://www.allanninal.dev/twilio/ucs2-segment-inflation/
 - [error 30005 is permanent: the carrier has no such number](./unknown-destination-handset-30005/) — https://www.allanninal.dev/twilio/unknown-destination-handset-30005/
 - [error 30003 is a handset that is off, not a dead number](./unreachable-destination-handset-30003/) — https://www.allanninal.dev/twilio/unreachable-destination-handset-30003/
@@ -100,18 +111,22 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a Verify Service issuing four-digit codes to production](./verify-code-length-too-short/) — https://www.allanninal.dev/twilio/verify-code-length-too-short/
 - [Verify conversion collapses in one country: SMS pumping](./verify-conversion-rate-collapse/) — https://www.allanninal.dev/twilio/verify-conversion-rate-collapse/
 - [OTP codes sent without the do-not-share warning line](./verify-do-not-share-warning-off/) — https://www.allanninal.dev/twilio/verify-do-not-share-warning-off/
+- [Verify runs with lookup_enabled false, so landlines are billed](./verify-lookup-disabled/) — https://www.allanninal.dev/twilio/verify-lookup-disabled/
 - [60202: a verification that burned all five check attempts](./verify-max-check-attempts/) — https://www.allanninal.dev/twilio/verify-max-check-attempts/
 - [60203: a resend button with no cooldown burns five sends](./verify-max-send-attempts/) — https://www.allanninal.dev/twilio/verify-max-send-attempts/
 - [a Verify Service with zero rate limits configured](./verify-no-rate-limits/) — https://www.allanninal.dev/twilio/verify-no-rate-limits/
 - [Verify sends SMS to a landline: 60205, or just silence](./verify-sms-to-landline/) — https://www.allanninal.dev/twilio/verify-sms-to-landline/
+- [21215: dialing permissions block a country you sell into](./voice-dialing-permissions-blocked/) — https://www.allanninal.dev/twilio/voice-dialing-permissions-blocked/
 - [twilio cannot open a TCP connection to your webhook (11205)](./webhook-connection-timeout-11205/) — https://www.allanninal.dev/twilio/webhook-connection-timeout-11205/
 - [a webhook hostname with no public DNS record fails with 11210](./webhook-dns-resolution-failure-11210/) — https://www.allanninal.dev/twilio/webhook-dns-resolution-failure-11210/
 - [error 11206: Twilio cannot parse your webhook's HTTP response](./webhook-http-protocol-violation-11206/) — https://www.allanninal.dev/twilio/webhook-http-protocol-violation-11206/
+- [11200 on the TwiML fetch: the call fails, not just a receipt](./webhook-http-retrieval-failure-11200/) — https://www.allanninal.dev/twilio/webhook-http-retrieval-failure-11200/
 - [a TwiML response with the wrong Content-Type fails with 12300](./webhook-invalid-content-type-12300/) — https://www.allanninal.dev/twilio/webhook-invalid-content-type-12300/
 - [signature validation rejects Twilio with 403 behind a proxy](./webhook-signature-validation-403-behind-proxy/) — https://www.allanninal.dev/twilio/webhook-signature-validation-403-behind-proxy/
 - [an expired webhook certificate fails every request with 11236](./webhook-tls-certificate-expired-11236/) — https://www.allanninal.dev/twilio/webhook-tls-certificate-expired-11236/
 - [error 11237: your webhook sends a chain Twilio cannot verify](./webhook-tls-chain-untrusted-11237/) — https://www.allanninal.dev/twilio/webhook-tls-chain-untrusted-11237/
 - [error 11220: the TLS handshake with your webhook never completes](./webhook-tls-handshake-failure-11220/) — https://www.allanninal.dev/twilio/webhook-tls-handshake-failure-11220/
+- [a rejected WhatsApp content template blocks every send](./whatsapp-content-template-rejected/) — https://www.allanninal.dev/twilio/whatsapp-content-template-rejected/
 
 ## How to run one
 
