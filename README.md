@@ -19,10 +19,13 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a suspended campaign returns 30033 and the sends keep coming](./a2p-campaign-suspended-30033/) — https://www.allanninal.dev/twilio/a2p-campaign-suspended-30033/
 - [a2p campaign is FAILED and errors[] names the rejected field](./a2p-campaign-vetting-failed/) — https://www.allanninal.dev/twilio/a2p-campaign-vetting-failed/
 - [30022 when sends outrun the throughput the carrier assigned](./a2p-throughput-exceeded-30022/) — https://www.allanninal.dev/twilio/a2p-throughput-exceeded-30022/
+- [the account itself is suspended, so every send fails with 20005](./account-suspended-or-closed/) — https://www.allanninal.dev/twilio/account-suspended-or-closed/
 - [an alphanumeric sender ID is unregistered where you send](./alphanumeric-sender-id-unregistered/) — https://www.allanninal.dev/twilio/alphanumeric-sender-id-unregistered/
 - [no API keys exist, so the auth token is the credential](./auth-token-used-instead-of-api-key/) — https://www.allanninal.dev/twilio/auth-token-used-instead-of-api-key/
 - [the balance is one busy hour from a 20005 suspension](./balance-below-safety-floor/) — https://www.allanninal.dev/twilio/balance-below-safety-floor/
 - [error 21617: the rendered message body exceeds 1600 chars](./body-exceeds-1600-chars-21617/) — https://www.allanninal.dev/twilio/body-exceeds-1600-chars-21617/
+- [a bundle is noncompliant on a field only Evaluations names](./bundle-evaluation-noncompliant/) — https://www.allanninal.dev/twilio/bundle-evaluation-noncompliant/
+- [a carrier blocks your caller ID and 32017 is the only notice](./carrier-blocked-caller-id-32017/) — https://www.allanninal.dev/twilio/carrier-blocked-caller-id-32017/
 - [carrier filtering drops your SMS silently with error 30007](./carrier-filtered-messages-30007/) — https://www.allanninal.dev/twilio/carrier-filtered-messages-30007/
 - [a conversation webhook with no URL fails every event: 50369](./conversations-webhook-url-missing/) — https://www.allanninal.dev/twilio/conversations-webhook-url-missing/
 - [recycled numbers send OTPs to whoever owns them now](./deactivated-number-recycling/) — https://www.allanninal.dev/twilio/deactivated-number-recycling/
@@ -49,11 +52,15 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [number webhooks on http, a private address or a dev tunnel](./phone-number-insecure-or-unreachable-webhook-url/) — https://www.allanninal.dev/twilio/phone-number-insecure-or-unreachable-webhook-url/
 - [a number with no fallback URL drops the call when yours 500s](./phone-number-missing-fallback-url/) — https://www.allanninal.dev/twilio/phone-number-missing-fallback-url/
 - [a phone number still points at Twilio's demo TwiML](./phone-number-still-on-demo-twiml/) — https://www.allanninal.dev/twilio/phone-number-still-on-demo-twiml/
+- [20003 on a read key: dead credential or a real boundary](./read-credential-permission-denied/) — https://www.allanninal.dev/twilio/read-credential-permission-denied/
 - [an approved regulatory bundle is counting down to expiry](./regulatory-bundle-expiring/) — https://www.allanninal.dev/twilio/regulatory-bundle-expiring/
+- [a rejected regulatory bundle blocks every number purchase](./regulatory-bundle-rejected/) — https://www.allanninal.dev/twilio/regulatory-bundle-rejected/
 - [REST concurrency exhausted, so bursts come back 20429](./rest-api-concurrency-exhausted/) — https://www.allanninal.dev/twilio/rest-api-concurrency-exhausted/
 - [30035 and 30024 are a clock, not a configuration mistake](./sender-pending-carrier-provisioning/) — https://www.allanninal.dev/twilio/sender-pending-carrier-provisioning/
 - [a short code used outside its own country fails 21612](./shortcode-cross-border-sender-mismatch/) — https://www.allanninal.dev/twilio/shortcode-cross-border-sender-mismatch/
 - [a SIP Domain with no auth_type accepts no traffic at all](./sip-domain-no-auth-type/) — https://www.allanninal.dev/twilio/sip-domain-no-auth-type/
+- [Dial fails with 32009 because the SIP endpoint is not there](./sip-endpoint-not-registered-32009/) — https://www.allanninal.dev/twilio/sip-endpoint-not-registered-32009/
+- [32011: Twilio cannot reach your SIP infrastructure](./sip-infrastructure-communication-error-32011/) — https://www.allanninal.dev/twilio/sip-infrastructure-communication-error-32011/
 - [SMS Geo Permissions are off for the destination country](./sms-geo-permissions-disabled/) — https://www.allanninal.dev/twilio/sms-geo-permissions-disabled/
 - [SMS Pumping Protection blocks legitimate OTPs with 30450](./sms-pumping-protection-30450/) — https://www.allanninal.dev/twilio/sms-pumping-protection-30450/
 - [years-old API keys are still live with nobody owning them](./stale-or-orphaned-api-keys/) — https://www.allanninal.dev/twilio/stale-or-orphaned-api-keys/
@@ -62,8 +69,13 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a published Studio Flow that no phone number points at](./studio-flow-not-wired-to-number/) — https://www.allanninal.dev/twilio/studio-flow-not-wired-to-number/
 - [a suspended subaccount, so one tenant's traffic 20005s](./subaccount-suspended-silently/) — https://www.allanninal.dev/twilio/subaccount-suspended-silently/
 - [an unverified toll-free number is blocked, not throttled](./tollfree-number-not-verified/) — https://www.allanninal.dev/twilio/tollfree-number-not-verified/
+- [a rejected toll-free verification is fixable or it is not](./tollfree-verification-rejected/) — https://www.allanninal.dev/twilio/tollfree-verification-rejected/
 - [a trial account rejects multi-segment messages with 30044](./trial-account-segment-limit-30044/) — https://www.allanninal.dev/twilio/trial-account-segment-limit-30044/
+- [a production integration is still running on a trial account](./trial-account-still-in-use/) — https://www.allanninal.dev/twilio/trial-account-still-in-use/
+- [the trial account's three verified numbers are spent](./trial-verified-caller-ids-exhausted/) — https://www.allanninal.dev/twilio/trial-verified-caller-ids-exhausted/
+- [a trunk sheds calls at its CPS limit and the average hides it](./trunk-cps-limit-exceeded-32001/) — https://www.allanninal.dev/twilio/trunk-cps-limit-exceeded-32001/
 - [a SIP trunk with no disaster recovery URL loses every call](./trunk-missing-disaster-recovery-url/) — https://www.allanninal.dev/twilio/trunk-missing-disaster-recovery-url/
+- [one rejected Trust Hub profile fails brands and toll-free](./trusthub-customer-profile-rejected/) — https://www.allanninal.dev/twilio/trusthub-customer-profile-rejected/
 - [TwiML that is not well-formed XML fails with 12100](./twiml-document-parse-failure-12100/) — https://www.allanninal.dev/twilio/twiml-document-parse-failure-12100/
 - [a TwiML response over 64 kB drops the call with 11750](./twiml-response-body-too-large-11750/) — https://www.allanninal.dev/twilio/twiml-response-body-too-large-11750/
 - [one smart quote triples your segment count and your bill](./ucs2-segment-inflation/) — https://www.allanninal.dev/twilio/ucs2-segment-inflation/
