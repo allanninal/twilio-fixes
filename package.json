@@ -1,0 +1,11 @@
+{
+  "name": "twilio-fixes",
+  "version": "1.0.0",
+  "description": "Read-only Python and Node.js scripts that find Twilio problems through the API \u2014 numbers left on demo TwiML, unregistered 10DLC campaigns, webhooks pointing nowhere and messages filtered by carriers. They report and print the repair; they never write",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
