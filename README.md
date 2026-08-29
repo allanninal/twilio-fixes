@@ -14,14 +14,22 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [an a2p campaign parked at IN_PROGRESS is not a live campaign](./a2p-campaign-stuck-in-progress/) — https://www.allanninal.dev/twilio/a2p-campaign-stuck-in-progress/
 - [a2p campaign is FAILED and errors[] names the rejected field](./a2p-campaign-vetting-failed/) — https://www.allanninal.dev/twilio/a2p-campaign-vetting-failed/
 - [carrier filtering drops your SMS silently with error 30007](./carrier-filtered-messages-30007/) — https://www.allanninal.dev/twilio/carrier-filtered-messages-30007/
+- [a voice-only From number fails every SMS with error 21606](./from-number-not-sms-capable/) — https://www.allanninal.dev/twilio/from-number-not-sms-capable/
 - [inbound SMS disappears into a number with no sms_url](./inbound-webhook-black-hole/) — https://www.allanninal.dev/twilio/inbound-webhook-black-hole/
 - [SMS to a landline fails with 30006 and retrying never helps](./landline-destination-30006/) — https://www.allanninal.dev/twilio/landline-destination-30006/
 - [messages stay queued or accepted and never reach a final state](./messages-stuck-queued-or-accepted/) — https://www.allanninal.dev/twilio/messages-stuck-queued-or-accepted/
+- [an empty sender pool fails every send with error 21704](./messaging-service-empty-sender-pool/) — https://www.allanninal.dev/twilio/messaging-service-empty-sender-pool/
+- [no status callback means delivery failures never reach you](./messaging-service-no-status-callback/) — https://www.allanninal.dev/twilio/messaging-service-no-status-callback/
 - [a Messaging Service with no A2P campaign fails US sends](./messaging-service-not-a2p-registered/) — https://www.allanninal.dev/twilio/messaging-service-not-a2p-registered/
+- [a number with an Application SID ignores its own voice_url](./number-conflicting-url-and-application-sid/) — https://www.allanninal.dev/twilio/number-conflicting-url-and-application-sid/
 - [sends to recipients who texted STOP bounce with 21610](./opted-out-recipients-21610/) — https://www.allanninal.dev/twilio/opted-out-recipients-21610/
 - [a number with no fallback URL drops the call when yours 500s](./phone-number-missing-fallback-url/) — https://www.allanninal.dev/twilio/phone-number-missing-fallback-url/
 - [a phone number still points at Twilio's demo TwiML](./phone-number-still-on-demo-twiml/) — https://www.allanninal.dev/twilio/phone-number-still-on-demo-twiml/
+- [status callback failures with 11200 leave delivery state blind](./status-callback-webhook-failing-11200/) — https://www.allanninal.dev/twilio/status-callback-webhook-failing-11200/
 - [an unverified toll-free number is blocked, not throttled](./tollfree-number-not-verified/) — https://www.allanninal.dev/twilio/tollfree-number-not-verified/
+- [twilio cannot open a TCP connection to your webhook (11205)](./webhook-connection-timeout-11205/) — https://www.allanninal.dev/twilio/webhook-connection-timeout-11205/
+- [a webhook hostname with no public DNS record fails with 11210](./webhook-dns-resolution-failure-11210/) — https://www.allanninal.dev/twilio/webhook-dns-resolution-failure-11210/
+- [an expired webhook certificate fails every request with 11236](./webhook-tls-certificate-expired-11236/) — https://www.allanninal.dev/twilio/webhook-tls-certificate-expired-11236/
 
 ## How to run one
 
