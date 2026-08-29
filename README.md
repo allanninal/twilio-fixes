@@ -16,7 +16,9 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a SUSPENDED brand suspends every campaign underneath it](./a2p-brand-suspended/) — https://www.allanninal.dev/twilio/a2p-brand-suspended/
 - [brand failed 30799: the EIN does not match the legal name](./a2p-brand-tax-id-legal-name-mismatch/) — https://www.allanninal.dev/twilio/a2p-brand-tax-id-legal-name-mismatch/
 - [an a2p campaign parked at IN_PROGRESS is not a live campaign](./a2p-campaign-stuck-in-progress/) — https://www.allanninal.dev/twilio/a2p-campaign-stuck-in-progress/
+- [a suspended campaign returns 30033 and the sends keep coming](./a2p-campaign-suspended-30033/) — https://www.allanninal.dev/twilio/a2p-campaign-suspended-30033/
 - [a2p campaign is FAILED and errors[] names the rejected field](./a2p-campaign-vetting-failed/) — https://www.allanninal.dev/twilio/a2p-campaign-vetting-failed/
+- [30022 when sends outrun the throughput the carrier assigned](./a2p-throughput-exceeded-30022/) — https://www.allanninal.dev/twilio/a2p-throughput-exceeded-30022/
 - [an alphanumeric sender ID is unregistered where you send](./alphanumeric-sender-id-unregistered/) — https://www.allanninal.dev/twilio/alphanumeric-sender-id-unregistered/
 - [no API keys exist, so the auth token is the credential](./auth-token-used-instead-of-api-key/) — https://www.allanninal.dev/twilio/auth-token-used-instead-of-api-key/
 - [the balance is one busy hour from a 20005 suspension](./balance-below-safety-floor/) — https://www.allanninal.dev/twilio/balance-below-safety-floor/
@@ -37,8 +39,10 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [an empty sender pool fails every send with error 21704](./messaging-service-empty-sender-pool/) — https://www.allanninal.dev/twilio/messaging-service-empty-sender-pool/
 - [no status callback means delivery failures never reach you](./messaging-service-no-status-callback/) — https://www.allanninal.dev/twilio/messaging-service-no-status-callback/
 - [a Messaging Service with no A2P campaign fails US sends](./messaging-service-not-a2p-registered/) — https://www.allanninal.dev/twilio/messaging-service-not-a2p-registered/
+- [error 30019: the MMS is too big for the carrier, not for Twilio](./mms-content-size-exceeds-carrier-30019/) — https://www.allanninal.dev/twilio/mms-content-size-exceeds-carrier-30019/
 - [no Usage Trigger, so overspend runs with nothing watching](./no-usage-trigger-configured/) — https://www.allanninal.dev/twilio/no-usage-trigger-configured/
 - [a number with an Application SID ignores its own voice_url](./number-conflicting-url-and-application-sid/) — https://www.allanninal.dev/twilio/number-conflicting-url-and-application-sid/
+- [a 10DLC number outside the sender pool is never registered](./number-missing-from-campaign-sender-pool/) — https://www.allanninal.dev/twilio/number-missing-from-campaign-sender-pool/
 - [sends to recipients who texted STOP bounce with 21610](./opted-out-recipients-21610/) — https://www.allanninal.dev/twilio/opted-out-recipients-21610/
 - [a rising share of outbound calls end in status failed](./outbound-call-failure-rate-spike/) — https://www.allanninal.dev/twilio/outbound-call-failure-rate-spike/
 - [outbound messaging is off, so every send fails with 30037](./outbound-messaging-disabled-30037/) — https://www.allanninal.dev/twilio/outbound-messaging-disabled-30037/
@@ -47,6 +51,7 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [a phone number still points at Twilio's demo TwiML](./phone-number-still-on-demo-twiml/) — https://www.allanninal.dev/twilio/phone-number-still-on-demo-twiml/
 - [an approved regulatory bundle is counting down to expiry](./regulatory-bundle-expiring/) — https://www.allanninal.dev/twilio/regulatory-bundle-expiring/
 - [REST concurrency exhausted, so bursts come back 20429](./rest-api-concurrency-exhausted/) — https://www.allanninal.dev/twilio/rest-api-concurrency-exhausted/
+- [30035 and 30024 are a clock, not a configuration mistake](./sender-pending-carrier-provisioning/) — https://www.allanninal.dev/twilio/sender-pending-carrier-provisioning/
 - [a short code used outside its own country fails 21612](./shortcode-cross-border-sender-mismatch/) — https://www.allanninal.dev/twilio/shortcode-cross-border-sender-mismatch/
 - [a SIP Domain with no auth_type accepts no traffic at all](./sip-domain-no-auth-type/) — https://www.allanninal.dev/twilio/sip-domain-no-auth-type/
 - [SMS Geo Permissions are off for the destination country](./sms-geo-permissions-disabled/) — https://www.allanninal.dev/twilio/sms-geo-permissions-disabled/
@@ -62,8 +67,15 @@ Full write ups with diagrams for each fix live at **[allanninal.dev/twilio](http
 - [TwiML that is not well-formed XML fails with 12100](./twiml-document-parse-failure-12100/) — https://www.allanninal.dev/twilio/twiml-document-parse-failure-12100/
 - [a TwiML response over 64 kB drops the call with 11750](./twiml-response-body-too-large-11750/) — https://www.allanninal.dev/twilio/twiml-response-body-too-large-11750/
 - [one smart quote triples your segment count and your bill](./ucs2-segment-inflation/) — https://www.allanninal.dev/twilio/ucs2-segment-inflation/
+- [error 30005 is permanent: the carrier has no such number](./unknown-destination-handset-30005/) — https://www.allanninal.dev/twilio/unknown-destination-handset-30005/
+- [error 30003 is a handset that is off, not a dead number](./unreachable-destination-handset-30003/) — https://www.allanninal.dev/twilio/unreachable-destination-handset-30003/
 - [recordings billed for storage until something deletes them](./unreleased-recordings-storage/) — https://www.allanninal.dev/twilio/unreleased-recordings-storage/
+- [error 30036: messages expire in the queue before they send](./validity-period-expired-30036/) — https://www.allanninal.dev/twilio/validity-period-expired-30036/
+- [a Verify Service issuing four-digit codes to production](./verify-code-length-too-short/) — https://www.allanninal.dev/twilio/verify-code-length-too-short/
 - [Verify conversion collapses in one country: SMS pumping](./verify-conversion-rate-collapse/) — https://www.allanninal.dev/twilio/verify-conversion-rate-collapse/
+- [OTP codes sent without the do-not-share warning line](./verify-do-not-share-warning-off/) — https://www.allanninal.dev/twilio/verify-do-not-share-warning-off/
+- [60202: a verification that burned all five check attempts](./verify-max-check-attempts/) — https://www.allanninal.dev/twilio/verify-max-check-attempts/
+- [60203: a resend button with no cooldown burns five sends](./verify-max-send-attempts/) — https://www.allanninal.dev/twilio/verify-max-send-attempts/
 - [a Verify Service with zero rate limits configured](./verify-no-rate-limits/) — https://www.allanninal.dev/twilio/verify-no-rate-limits/
 - [Verify sends SMS to a landline: 60205, or just silence](./verify-sms-to-landline/) — https://www.allanninal.dev/twilio/verify-sms-to-landline/
 - [twilio cannot open a TCP connection to your webhook (11205)](./webhook-connection-timeout-11205/) — https://www.allanninal.dev/twilio/webhook-connection-timeout-11205/
